@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 project(SDL2_test)
 
-if(NOT TARGET SDL2::SDL2-static)
-    find_package(SDL2 2.0.23 REQUIRED COMPONENTS SDL2-static SDL2test)
-endif()
+#if(NOT TARGET SDL2::SDL2-static)
+#    find_package(SDL2 2.0.23 REQUIRED COMPONENTS SDL2-static SDL2test)
+#endif()
 
 enable_testing()
 
@@ -38,7 +38,7 @@ link_libraries(
         ps2_drivers
 )
 else()
-    link_libraries(SDL2::SDL2test SDL2::SDL2-static)
+    link_libraries(SDL2::SDL2test SDL2::SDL2)
 endif()
 
 if(WINDOWS)

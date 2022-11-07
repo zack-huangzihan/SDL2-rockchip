@@ -97,12 +97,19 @@
 
 #else
 /* Desktop Linux/Unix-like */
-#define DEFAULT_OGL "libGL.so.1"
-#define DEFAULT_EGL "libEGL.so.1"
-#define ALT_OGL "libOpenGL.so.0"
-#define DEFAULT_OGL_ES2 "libGLESv2.so.2"
-#define DEFAULT_OGL_ES_PVR "libGLES_CM.so.1"
-#define DEFAULT_OGL_ES "libGLESv1_CM.so.1"
+//#define DEFAULT_OGL "libGL.so.1"
+//#define DEFAULT_EGL "libEGL.so.1"
+//#define ALT_OGL "libOpenGL.so.0"
+//#define DEFAULT_OGL_ES2 "libGLESv2.so.2"
+//#define DEFAULT_OGL_ES_PVR "libGLES_CM.so.1"
+//#define DEFAULT_OGL_ES "libGLESv1_CM.so.1"
+
+#define DEFAULT_OGL "libmali.so.1.9.0"
+#define DEFAULT_EGL "libmali.so.1.9.0"
+#define ALT_OGL "libmali.so.1.9.0"
+#define DEFAULT_OGL_ES2 "libmali.so.1.9.0"
+#define DEFAULT_OGL_ES_PVR "libmali.so.1.9.0"
+#define DEFAULT_OGL_ES "libmali.so.1.9.0"
 #endif /* SDL_VIDEO_DRIVER_RPI */
 
 #if SDL_VIDEO_OPENGL && !SDL_VIDEO_VITA_PVR_OGL

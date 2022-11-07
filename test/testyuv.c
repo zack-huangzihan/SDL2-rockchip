@@ -266,6 +266,8 @@ main(int argc, char **argv)
     Uint32 then, now, i, iterations = 100;
     SDL_bool should_run_automated_tests = SDL_FALSE;
 
+    SDL_LogSetAllPriority(SDL_LOG_PRIORITY_VERBOSE);
+
     while (argv[arg] && *argv[arg] == '-') {
         if (SDL_strcmp(argv[arg], "--jpeg") == 0) {
             SDL_SetYUVConversionMode(SDL_YUV_CONVERSION_JPEG);
